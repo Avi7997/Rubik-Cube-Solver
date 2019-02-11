@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <com.layer_net.stepindicator.StepIndicator
+            android:id="@+id/step_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            app:siBackgroundColor="#b1b1b1"
+            app:siStepColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#252525"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/blueButton"
+                        android:layout_width="53dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:text="#0000FF"
+                        android:textColor="#0000FF" />
+
+                    <Button
+                        android:id="@+id/whiteButton"
+                        android:layout_width="53dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:text="#FFFFFF"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/yellowButton"
+                        android:layout_width="53dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:text="#FFFF00"
+                        android:textColor="#FFFF00" />
+
+                    <Button
+                        android:id="@+id/greenButton"
+                        android:layout_width="53dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:text="#008000"
+                        android:textColor="#008000" />
+
+                    <Button
+                        android:id="@+id/orangeButton"
+                        android:layout_width="53dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:text="#FFA500"
+                        android:textColor="#FFA500" />
+
+                    <Button
+                        android:id="@+id/redButton"
+                        android:layout_width="53dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:text="#FF0000"
+                        android:textColor="#FF0000" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cube_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:id="@+id/cubeOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:weightSum="1.0">
+
+            <include layout="@layout/cube_one" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cubeTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:weightSum="1.0">
+
+            <include layout="@layout/cube_two" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cubeThree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:weightSum="1.0">
+
+            <include layout="@layout/cube_three" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cubeFour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:weightSum="1.0">
+
+            <include layout="@layout/cube_four" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cubeFive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:weightSum="1.0">
+
+            <include layout="@layout/cube_five" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cubeSix"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:weightSum="1.0">
+
+            <include layout="@layout/cube_six" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/current"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/continueget"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Current"
+            android:textColor="#ffffff"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/continueget"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Next"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+</LinearLayout>

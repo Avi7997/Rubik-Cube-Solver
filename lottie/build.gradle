@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    //buildToolsVersion "25.0.2"
+    resourcePrefix 'lottie_'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+    }
+    buildToolsVersion '27.0.3'
+}
+dependencies {
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.robolectric:robolectric:3.1.2'
+}
+
