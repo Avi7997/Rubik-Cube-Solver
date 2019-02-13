@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     //cube counter
 
     int counter = 0;
-    String stringColor = "#d9d9d9";
+    String stringColor = "#ffffff";
 
     //Button colors
     Button rubicButtonBlue, rubicButtonWhite, rubicButtonYellow, rubicButtonGreen,
